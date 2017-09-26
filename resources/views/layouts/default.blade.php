@@ -1,32 +1,16 @@
-<!--
-______                            _              _                                     _
-| ___ \                          | |            | |                                   | |
-| |_/ /___ __      __ ___  _ __  | |__   _   _  | |      __ _  _ __  __ _ __   __ ___ | |
-|  __// _ \\ \ /\ / // _ \| '__| | '_ \ | | | | | |     / _` || '__|/ _` |\ \ / // _ \| |
-| |  | (_) |\ V  V /|  __/| |    | |_) || |_| | | |____| (_| || |  | (_| | \ V /|  __/| |
-\_|   \___/  \_/\_/  \___||_|    |_.__/  \__, | \_____/ \__,_||_|   \__,_|  \_/  \___||_|
-                                          __/ |
-                                         |___/
-  ========================================================
-                                           laravel-china.org
-
-  --------------------------------------------------------
-  Powered by PHPHub
--->
-
 <!DOCTYPE html>
 <html lang="zh">
 	<head>
 
 		<meta charset="UTF-8">
 
-		<title>@section('title')Laravel China 社区 - 高品质的 Laravel 开发者社区@show - Powered by PHPHub</title>
+		<title>@section('title')猫友会社区—— 猫友会，帮助优秀互联网人才回流武汉！ - Powered by PHPHub。@show</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-		<meta name="keywords" content="php,laravel,php论坛,laravel论坛,php社区,laravel社区,laravel教程,php教程,laravel视频,php开源,php新手,php7,laravel5" />
+		<meta name="keywords" content="猫友会,光谷猫友会,武汉IT,武汉互联网,湖北互联网" />
 		<meta name="author" content="PHPHub" />
-		<meta name="description" content="@section('description') Laravel China 是国内最大的 Laravel 中文开发者社区，致力于推动 Laravel，PHP7、php-fig 等 PHP 新技术，新理念在中国的发展，是国内最靠谱的 PHP 论坛。 @show" />
+		<meta name="description" content="@section('description') 猫友会，是聚焦“人才回流、知识回流、创业回流“的公益性质湖北籍互联网社群，人才回流，搭建平台链接外地优秀人才和本地优秀公司；知识回流，引进业界前沿知识分享，并带动本地的知识分享氛围；创业回流，提供启动资金，帮助搭建团队，助创业者回流。 @show" />
         <meta name="_token" content="{{ csrf_token() }}">
 
         <link rel="stylesheet" href="{{ cdn(elixir('assets/css/styles.css')) }}">

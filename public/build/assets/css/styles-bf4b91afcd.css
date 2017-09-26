@@ -10652,16 +10652,6 @@ body.swal2-iosfix {
       outline: none;
       box-shadow: 0 0 3px #c4e6f5;
       border: 1px solid #b4dbed; }
-      .swal2-modal .swal2-input:focus::-webkit-input-placeholder,
-      .swal2-modal .swal2-file:focus::-webkit-input-placeholder,
-      .swal2-modal .swal2-textarea:focus::-webkit-input-placeholder {
-        transition: opacity .3s .03s ease;
-        opacity: .8; }
-      .swal2-modal .swal2-input:focus::-moz-placeholder,
-      .swal2-modal .swal2-file:focus::-moz-placeholder,
-      .swal2-modal .swal2-textarea:focus::-moz-placeholder {
-        transition: opacity .3s .03s ease;
-        opacity: .8; }
       .swal2-modal .swal2-input:focus:-ms-input-placeholder,
       .swal2-modal .swal2-file:focus:-ms-input-placeholder,
       .swal2-modal .swal2-textarea:focus:-ms-input-placeholder {
@@ -10672,14 +10662,6 @@ body.swal2-iosfix {
       .swal2-modal .swal2-textarea:focus::placeholder {
         transition: opacity .3s .03s ease;
         opacity: .8; }
-    .swal2-modal .swal2-input::-webkit-input-placeholder,
-    .swal2-modal .swal2-file::-webkit-input-placeholder,
-    .swal2-modal .swal2-textarea::-webkit-input-placeholder {
-      color: #e6e6e6; }
-    .swal2-modal .swal2-input::-moz-placeholder,
-    .swal2-modal .swal2-file::-moz-placeholder,
-    .swal2-modal .swal2-textarea::-moz-placeholder {
-      color: #e6e6e6; }
     .swal2-modal .swal2-input:-ms-input-placeholder,
     .swal2-modal .swal2-file:-ms-input-placeholder,
     .swal2-modal .swal2-textarea:-ms-input-placeholder {
@@ -12752,8 +12734,10 @@ a.anchorific, a.anchorjs-link {
   display: inline-block; }
 
 .navbar-default .navbar-brand img {
-  width: 128px;
-  height: 16px; }
+  width: 40px;
+  height: 40px;
+  margin-top: -12px;
+  margin-left: 10px; }
 
 .navbar-default .navbar-brand {
   color: #fff;

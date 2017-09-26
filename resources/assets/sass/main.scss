@@ -2092,8 +2092,10 @@ a.anchorific, a.anchorjs-link  {
     display: inline-block;
 }
 .navbar-default .navbar-brand img {
-    width: 128px;
-    height: 16px;
+    width: 40px;
+    height: 40px;
+    margin-top: -12px;
+    margin-left: 10px;
 }
 .navbar-default .navbar-brand {
     color: #fff;

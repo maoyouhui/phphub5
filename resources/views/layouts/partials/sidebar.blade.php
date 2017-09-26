@@ -60,15 +60,6 @@
   </div>
   @endif
 
-<div class="panel panel-default corner-radius" style="
-    text-align: center;
-    background-color: transparent;
-    border: none;
-">
-<a href="https://laravel-china.org/topics/3383" rel="nofollow" title="" style="">
-      <img src="https://dn-phphub.qbox.me/uploads/images/201612/09/1/qASrRyKNj0.jpg" style="width: 100%;border-radius: 0px;box-shadow: none;border: 1px solid #ffafaf;"></a>
-</div>
-
 @if (Route::currentRouteName() == 'topics.index')
     @include('layouts.partials._resources_panel')
 @endif
@@ -96,18 +87,6 @@
 @endif
 
 
-  <div class="panel panel-default corner-radius">
-    <div class="panel-body text-center sidebar-sponsor-box">
-        @if(isset($banners['sidebar-sponsor']))
-            @foreach($banners['sidebar-sponsor'] as $banner)
-                <a class="sidebar-sponsor-link" href="{{ $banner->link }}" target="_blank">
-                    <img src="{{ $banner->image_url }}" class="popover-with-html" data-content="{{ $banner->title }}" width="100%">
-                </a>
-                <hr>
-            @endforeach
-        @endif
-  </div>
-  </div>
 
 @if (Route::currentRouteName() != 'home')
   @if (isset($links) && count($links))
@@ -126,47 +105,9 @@
   @endif
 @endif
 
-@if (Route::currentRouteName() == 'topics.index')
 
-<div class="panel panel-default corner-radius">
-  <div class="panel-heading text-center">
-    <h3 class="panel-title">{{ lang('App Download') }}</h3>
-  </div>
-  <div class="panel-body text-center" style="padding: 7px;">
-    <a href="https://laravel-china.org/topics/1531" target="_blank" rel="nofollow" title="">
-      <img src="https://dn-phphub.qbox.me/uploads/images/201512/08/1/cziZFHqkm8.png" style="width:240px;">
-    </a>
-  </div>
-</div>
 
-@endif
 
-<div id="sticker">
 
-@include('layouts.partials._resources_panel')
-
-<div class="panel panel-default corner-radius" style="color:#a5a5a5">
-  <div class="panel-body text-center">
-      <a href="http://estgroupe.com/" style="color:#a5a5a5">
-          <img src="https://dn-phphub.qbox.me/uploads/images/201612/12/1/iq7WQc2iuW.png" style="width: 20px;margin-right: 4px;margin-top: -4px;">
-          <span style="margin-top: 7px;display: inline-block;">
-              优帆远扬 - 创造不息，交付不止
-          </span>
-      </a>
-  </div>
-</div>
-
-<div class="panel panel-default corner-radius" style="color:#a5a5a5">
-  <div class="panel-body text-center">
-      <a href="{{ Auth::check() ? 'https://laravel-china.org/messages/to/1' : 'mailto:summer@yousails.com'}}" style="color:#a5a5a5">
-          <span style="margin-top: 7px;display: inline-block;">
-              <i class="fa fa-heart" aria-hidden="true" style="color: rgba(232, 146, 136, 0.89);"></i> 建议反馈？请私信 Summer
-          </span>
-      </a>
-  </div>
-</div>
-
-</div>
-</div>
 <div class="clearfix"></div>
 
