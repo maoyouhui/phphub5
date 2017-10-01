@@ -16,11 +16,11 @@
 
     <div id="top-navbar-collapse" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="{{ (Request::is('topics') && ! Request::is('categories*') ? ' active' : '') }}"><a href="{{ route('topics.index') }}">{{ lang('Topics') }}</a></li>
-        <li class="{{ (Request::is('categories/'.config('phphub.hunt_category_id')) || (isset($topic) && $topic->category_id == config('phphub.hunt_category_id'))) ? ' active' : '' }}"><a href="{{ route('categories.show', config('phphub.hunt_category_id')) }}">头条</a></li>
-        <li class="{{ (Request::is('categories/'.config('phphub.life_category_id')) || (isset($topic) && $topic->category_id == config('phphub.life_category_id'))) ? ' active' : '' }}"><a href="{{ route('categories.show', config('phphub.life_category_id')) }}">生活</a></li>
-        <li class="{{ Request::is('categories/1') || (isset($topic) && $topic->category_id === 1) ? ' active' : '' }}"><a href="{{ route('categories.show', 1) }}">{{ lang('Jobs') }}</a></li>
-        <li class="{{ (Request::is('categories/'.config('phphub.qa_category_id')) || (isset($topic) && $topic->category_id == config('phphub.qa_category_id'))) ? ' active' : '' }}"><a href="{{ route('categories.show', config('phphub.qa_category_id')) }}">问答</a></li>
+        <li class="{{ (Request::is('topics') && ! Request::is('categories*') ? ' active' : '') }}"><a href="{{ route('topics.index') }}">全部</a></li>
+	<li class="{{ Request::is('categories/11') || (isset($topic) && $topic->category_id === 11) ? ' active' : '' }}"><a href="{{ route('categories.show', 11) }}">相亲&交友</a></li>
+        <li class="{{ Request::is('categories/1') || (isset($topic) && $topic->category_id === 1) ? ' active' : '' }}"><a href="{{ route('categories.show', 1) }}">创业&招聘</a></li>
+	<li class="{{ Request::is('categories/12') || (isset($topic) && $topic->category_id === 12) ? ' active' : '' }}"><a href="{{ route('categories.show', 12) }}">房产&落户</a></li>
+
       </ul>
 
       <div class="navbar-right">

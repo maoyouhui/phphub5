@@ -119,6 +119,31 @@ class CategoriesTableSeeder extends Seeder
                 'updated_at'  => '2016-07-03 10:00:00',
                 'deleted_at'  => null,
             ),
+	    8 =>
+	    array(
+		'id'          => 11,
+		'parent_id'   => 0,
+		'post_count'  => 0,
+		'weight'      => 98,
+		'name'        => '相亲&交友',													                   'slug'        => 'jiao-you',
+		'description' => '相亲&交友',
+		'created_at'  => '2017-09-26 10:00:00',
+		'updated_at'  => '2017-09-26 10:00:00',
+		'deleted_at'  => null,
+	    ),
+	    9 =>
+	    array(
+		'id'          => 12,
+		'parent_id'   => 0,
+	    	'post_count'  => 0,
+	    	'weight'      => 98,
+	    	'name'        => '房产&落户',
+	    	'slug'        => 'fang-chan',
+	    	'description' => '房产，落户',
+	    	'created_at'  => '2017-09-26 10:00:00',
+	    	'updated_at'  => '2017-09-26 10:00:00',
+	    	'deleted_at'  => null,
+	    ),
         ));
     }
 }
