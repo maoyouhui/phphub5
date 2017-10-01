@@ -17,9 +17,9 @@
     <div id="top-navbar-collapse" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="{{ (Request::is('topics') && ! Request::is('categories*') ? ' active' : '') }}"><a href="{{ route('topics.index') }}">全部</a></li>
-	<li class="{{ Request::is('categories/11') || (isset($topic) && $topic->category_id === 11) ? ' active' : '' }}"><a href="{{ route('categories.show', 11) }}">相亲&交友</a></li>
+	<li class="{{ Request::is('categories/2') || (isset($topic) && $topic->category_id === 2) ? ' active' : '' }}"><a href="{{ route('categories.show', 2) }}">相亲&交友</a></li>
         <li class="{{ Request::is('categories/1') || (isset($topic) && $topic->category_id === 1) ? ' active' : '' }}"><a href="{{ route('categories.show', 1) }}">创业&招聘</a></li>
-	<li class="{{ Request::is('categories/12') || (isset($topic) && $topic->category_id === 12) ? ' active' : '' }}"><a href="{{ route('categories.show', 12) }}">房产&落户</a></li>
+	<li class="{{ Request::is('categories/3') || (isset($topic) && $topic->category_id === 3) ? ' active' : '' }}"><a href="{{ route('categories.show', 3) }}">房产&落户</a></li>
 
       </ul>
 
