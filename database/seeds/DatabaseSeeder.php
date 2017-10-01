@@ -6,18 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 class DatabaseSeeder extends Seeder
 {
     protected $seeders = [
-        'UsersTableSeeder',
-        'LinksTableSeeder',
         'CategoriesTableSeeder',
-        'BlogTableSeeder',
-        'TopicsTableSeeder',
-        'RepliesTableSeeder',
-        'BannersTableSeeder',
-        'FollowersTableSeeder',
-        'ActiveUsersTableSeeder',
-        'HotTopicsTableSeeder',
-        'SitesTableSeeder',
-        'OauthClientsTableSeeder',
     ];
 
     public function run()
